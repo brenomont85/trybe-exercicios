@@ -35,3 +35,12 @@ button:hover {
 button:active {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.second-list:hover {
+    color: aliceblue;
+    background-color: crimson;
+}
+
+.second-list:active {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
