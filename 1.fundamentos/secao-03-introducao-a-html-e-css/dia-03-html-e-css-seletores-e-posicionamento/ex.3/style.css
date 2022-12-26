@@ -32,3 +32,6 @@ button:hover {
     background-color: black;
 }
 
+button:active {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
