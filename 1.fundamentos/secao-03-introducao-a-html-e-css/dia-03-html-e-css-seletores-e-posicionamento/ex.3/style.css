@@ -2,3 +2,8 @@ h1, p {
     text-align: center;
 }
 
+ol {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
