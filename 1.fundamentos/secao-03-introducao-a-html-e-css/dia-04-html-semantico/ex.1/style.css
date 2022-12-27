@@ -1,3 +1,13 @@
 aside, footer, nav {
     border-top: 1px gray solid;
 }
+
+body {
+    font-size: 19px;
+    font-weight: normal;
+    letter-spacing: .1px;
+    line-height: 33px;
+    font-family: Georgia, serif;
+    width: 70%;
+}
+  
