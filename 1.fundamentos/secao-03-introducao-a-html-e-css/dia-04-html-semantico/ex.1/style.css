@@ -31,3 +31,8 @@ img {
     display: block;
     max-width: 100%;
 }
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px gray solid;
+}
