@@ -11,3 +11,7 @@ body {
     width: 70%;
 }
   
+.centered {
+    margin: 0 auto;
+}
+  
