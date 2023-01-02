@@ -60,3 +60,14 @@ for (let index = 1; index < numbers.length; index += 1) {
 }
 console.log(lowestNumber);
 
+//item 8 de exercício
+let numbers2 = [];
+
+for (let index = 1; index <= 25; index += 1) {
+  numbers2.push(index);
+}
+
+console.log(numbers2);
+
+//item 9 de exercício
+
