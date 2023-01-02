@@ -32,7 +32,7 @@ for (let index = 1; index < numbers.length; index += 1) {
     if (numbers[index] > highestNumber) {
      highestNumber = numbers[index];
     }
-  }
+}
 console.log(highestNumber);
 
 //item 6 de exercício
@@ -40,14 +40,23 @@ let numberOfOdds = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] % 2 !== 0) {
-        numberOfOdds+=1;   
+        numberOfOdds += 1;   
     } 
 }
 
 if (numberOfOdds === 0) {
     console.log('nenhum valor ímpar encontrado');
-  } else {
+} else {
     console.log(numberOfOdds);
-  }
+}
 
+//item 7 de exercício
+let lowestNumber = numbers[0];
+
+for (let index = 1; index < numbers.length; index += 1) {
+    if (numbers[index] < lowestNumber) {
+     lowestNumber = numbers[index];
+    }
+}
+console.log(lowestNumber);
 
