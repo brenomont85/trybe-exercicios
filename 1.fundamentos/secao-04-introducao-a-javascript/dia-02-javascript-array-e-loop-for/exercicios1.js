@@ -13,3 +13,9 @@ for (let index = 0; index < numbers.length; index++) {
 
 console.log(sumArrayNumbers);
 
+//item 3 de exercício
+let arrayAverage = sumArrayNumbers / numbers.length;
+
+console.log(arrayAverage);
+
+
