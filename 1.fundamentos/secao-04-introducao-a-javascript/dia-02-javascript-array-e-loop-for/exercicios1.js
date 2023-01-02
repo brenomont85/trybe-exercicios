@@ -70,4 +70,6 @@ for (let index = 1; index <= 25; index += 1) {
 console.log(numbers2);
 
 //item 9 de exercício
-
+for (let index = 0; index < numbers2.length; index += 1) {
+    console.log(numbers2[index] / 2);
+  };
