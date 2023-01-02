@@ -18,4 +18,12 @@ let arrayAverage = sumArrayNumbers / numbers.length;
 
 console.log(arrayAverage);
 
+//item 4 de exercício
+if (arrayAverage> 20) {
+    console.log('valor maior que 20');
+} else {
+    console.log('valor menor ou igual a 20');
+};
+  
+
 
