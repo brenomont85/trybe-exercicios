@@ -7,7 +7,7 @@ for (let index = 0; index < numbers.length; index += 1) {
 
 //item 2 de exercício
 let sumArrayNumbers = 0;
-for (let index = 0; index < numbers.length; index++) {
+for (let index = 0; index < numbers.length; index += 1) {
     sumArrayNumbers += numbers[index];
 }
 
@@ -24,6 +24,15 @@ if (arrayAverage> 20) {
 } else {
     console.log('valor menor ou igual a 20');
 };
-  
+
+//item 5 de exercício
+let highestNumber = numbers[0];
+
+for (let index = 1; index < numbers.length; index += 1) {
+    if (numbers[index] > highestNumber) {
+     highestNumber = numbers[index];
+    }
+  }
+console.log(highestNumber);
 
 
