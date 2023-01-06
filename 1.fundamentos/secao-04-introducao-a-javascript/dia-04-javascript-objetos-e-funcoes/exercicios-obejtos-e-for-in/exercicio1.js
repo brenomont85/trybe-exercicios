@@ -6,3 +6,9 @@ let info = {
 
 // mensagem de boas vindas a margarida
 console.log('Bem-vinda, '+ info.personagem);
+
+//Insira no objeto uma nova propriedade com o nome de chave ‘recorrente’ e o valor ‘Sim’.
+//Imprima o objeto no console
+info.recorrente = 'Sim';
+
+console.log(info);
