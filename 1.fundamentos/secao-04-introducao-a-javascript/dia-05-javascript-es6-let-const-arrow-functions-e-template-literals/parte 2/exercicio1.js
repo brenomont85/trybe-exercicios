@@ -17,6 +17,6 @@ const ligarDesligar = () => (
     status = status === 'desligado' ? 'ligado' : 'desligado'
 )
 
-console.log(`O motor está ${ligarDesligar()}`); // O motor está ligado
-console.log(`O motor está ${ligarDesligar()}`); // O motor está desligado
-console.log(`O motor está ${ligarDesligar()}`); // O motor está ligado
+console.log(`O motor está ${ligarDesligar()}`);
+console.log(`O motor está ${ligarDesligar()}`); 
+console.log(`O motor está ${ligarDesligar()}`); 
