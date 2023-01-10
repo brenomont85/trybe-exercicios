@@ -70,3 +70,7 @@ for (let index = 0; index < classDescription.length; index += 1) {
 //a classe left-content). Utilize a função .removeChild();
 const removeSectionLeftContent = document.getElementsByClassName('left-content')[0];
 main.removeChild(removeSectionLeftContent);
+
+//Centralize a section criada no passo 6 (aquele que possui a classe right-content).
+
+rightContent.style.marginRight='auto';
