@@ -14,3 +14,9 @@ const main = document.getElementById('main-content');
 const centerContent = document.createElement('section');
 centerContent.className = 'center-content';
 main.appendChild(centerContent);
+
+//Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+const center = document.getElementsByClassName('center-content')[0];
+const centerParagraph = document.createElement('p');
+centerParagraph.innerText = 'Texto Provisório, Texto Provisório, Texto Provisório, Texto Provisório, Texto Provisório.'
+center.appendChild(centerParagraph);
