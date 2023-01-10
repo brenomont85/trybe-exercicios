@@ -56,3 +56,6 @@ for (let index = 1; index <= 3; index +=1) {
     createH3.innerText = 'show tag ' + index;
     main.appendChild(createH3);
 };
+
+//Adicione a classe title na tag h1 criada;
+elementH1.className = 'title';
