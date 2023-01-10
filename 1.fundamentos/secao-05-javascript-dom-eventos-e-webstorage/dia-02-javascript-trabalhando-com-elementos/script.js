@@ -77,3 +77,8 @@ rightContent.style.marginRight='auto';
 //Troque a cor de fundo do elemento pai da section criada no passo 3 
 //(aquela que possui a classe center-content) para a cor verde;
 centerContent.parentElement.style.backgroundColor = 'green';
+
+//Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+const ul = document.getElementsByTagName('ul')[0];
+ul.lastChild.previousSibling.remove();
+ul.lastChild.remove();
