@@ -48,4 +48,11 @@ for (let index = 0; index < arrayNumbers.length; index += 1) {
     const creatLi = document.createElement('li');
     creatLi.innerHTML = arrayNumbers[index];
     elementUl.appendChild(creatLi);
-}
+};
+
+//Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+for (let index = 1; index <= 3; index +=1) {
+    const createH3 = document.createElement('h3');
+    createH3.innerText = 'show tag ' + index;
+    main.appendChild(createH3);
+};
