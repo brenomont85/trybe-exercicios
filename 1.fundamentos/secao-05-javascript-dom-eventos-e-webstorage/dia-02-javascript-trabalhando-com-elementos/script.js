@@ -65,3 +65,8 @@ const classDescription = document.getElementsByTagName('h3');
 for (let index = 0; index < classDescription.length; index += 1) {
     classDescription[index].className = 'description';
 };
+
+//Remova a section criada no passo 5 (aquele que possui 
+//a classe left-content). Utilize a função .removeChild();
+const removeSectionLeftContent = document.getElementsByClassName('left-content')[0];
+main.removeChild(removeSectionLeftContent);
