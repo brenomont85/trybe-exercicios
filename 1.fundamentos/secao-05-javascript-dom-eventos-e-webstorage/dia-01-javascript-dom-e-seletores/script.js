@@ -37,3 +37,13 @@ const paragraphUpperCase = () => {
     firstParagraph.innerText = firstParagraph.innerText.toUpperCase();
 }
 paragraphUpperCase();
+
+//Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
+
+const showParagraphs = () => {
+    let paragraphs = document.getElementsByTagName('p');
+    for (let index = 0; index < paragraphs.length; index += 1) {
+        console.log(paragraphs[index].innerText);
+    }
+};
+showParagraphs();
