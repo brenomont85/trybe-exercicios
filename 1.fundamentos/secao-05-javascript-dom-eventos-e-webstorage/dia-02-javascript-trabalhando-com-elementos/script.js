@@ -25,3 +25,8 @@ center.appendChild(centerParagraph);
 const leftContent = document.createElement('section');
 leftContent.className ='left-content';
 main.appendChild(leftContent);
+
+//Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+const rightContent = document.createElement('section');
+rightContent.className ='right-content';
+main.appendChild(rightContent);
