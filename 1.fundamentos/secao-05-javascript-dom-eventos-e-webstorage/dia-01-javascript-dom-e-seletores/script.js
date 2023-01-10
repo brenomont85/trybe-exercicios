@@ -4,6 +4,7 @@ const changeText = () => {
    let paragraph = document.getElementsByTagName('p')[1];
     paragraph.innerText = 'Recebi as chaves da minha casa própia, agira tenho um espaço especial para acolher minha família meus animais e uma sala confortavél para continuar me desenvolvendo.';
 }
+
 changeText();
 
 const changeSquareToGreen = () => {
@@ -12,3 +13,10 @@ const changeSquareToGreen = () => {
 }
 
 changeSquareToGreen();
+
+const changeSquareToWhite = () => {
+    let redSquare = document.getElementsByClassName('center-content')[0];
+    redSquare.style.backgroundColor = 'white';
+}
+
+changeSquareToWhite();
