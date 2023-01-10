@@ -72,5 +72,8 @@ const removeSectionLeftContent = document.getElementsByClassName('left-content')
 main.removeChild(removeSectionLeftContent);
 
 //Centralize a section criada no passo 6 (aquele que possui a classe right-content).
-
 rightContent.style.marginRight='auto';
+
+//Troque a cor de fundo do elemento pai da section criada no passo 3 
+//(aquela que possui a classe center-content) para a cor verde;
+centerContent.parentElement.style.backgroundColor = 'green';
