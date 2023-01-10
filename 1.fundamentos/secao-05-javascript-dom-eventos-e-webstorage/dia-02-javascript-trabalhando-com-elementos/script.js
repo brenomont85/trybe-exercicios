@@ -20,3 +20,8 @@ const center = document.getElementsByClassName('center-content')[0];
 const centerParagraph = document.createElement('p');
 centerParagraph.innerText = 'Texto Provisório, Texto Provisório, Texto Provisório, Texto Provisório, Texto Provisório.'
 center.appendChild(centerParagraph);
+
+//Adicione a tag section com a classe left-content como filho da tag main criada no passo 2
+const leftContent = document.createElement('section');
+leftContent.className ='left-content';
+main.appendChild(leftContent);
