@@ -6,17 +6,24 @@ const changeText = () => {
 }
 changeText();
 
+//Crie e execute uma função que mude a cor do quadrado amarelo para rgb(76,164,109).
+
 const changeSquareToGreen = () => {
     let yellowSquare = document.getElementsByClassName('main-content')[0];
     yellowSquare.style.backgroundColor = 'rgb(76,164,109)';
 }
 changeSquareToGreen();
 
+//Crie e execute uma função que mude a cor do quadrado vermelho para branco.
+
 const changeSquareToWhite = () => {
     let redSquare = document.getElementsByClassName('center-content')[0];
     redSquare.style.backgroundColor = 'white';
 }
 changeSquareToWhite();
+
+//Crie e execute uma função que corrija o texto da tag <h1>.
+
 
 const correctTitle = () => {
     let title = document.getElementsByTagName('h1')[0];
