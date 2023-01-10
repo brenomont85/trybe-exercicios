@@ -30,3 +30,10 @@ main.appendChild(leftContent);
 const rightContent = document.createElement('section');
 rightContent.className ='right-content';
 main.appendChild(rightContent);
+
+//Adicione uma imagem com src configurado para o valor https://picsum.photos/200 
+//e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
+const image = document.createElement('img');
+image.src = 'https://picsum.photos/200';
+image.className = 'small-image';
+leftContent.appendChild(image);
