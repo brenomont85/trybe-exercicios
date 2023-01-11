@@ -151,5 +151,22 @@ const addTaskDiv = (color) => {
     getTaskElement.appendChild(creatTaskDiv);
 };
 
-addTaskDiv('crimson');
+addTaskDiv('aquamarine');
+
+//parte 9
+const selectTask = () => { 
+    let getDiv = document.querySelector('.task');
+
+    const selectDiv = (event) => {
+        if (event.target.className === 'task selected') {
+            event.target.className = 'task';
+        } else {
+            event.target.className = 'task selected';
+        }
+    }
+
+    getDiv.addEventListener('click', selectDiv);
+};
+
+selectTask();
 
