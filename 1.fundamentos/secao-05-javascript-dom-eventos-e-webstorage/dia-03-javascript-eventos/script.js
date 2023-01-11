@@ -130,3 +130,15 @@ const dayMouseOut = () => {
 
 dayMouseOver();
 dayMouseOut();
+
+//parte 7
+ 
+const addTask = (task) => {
+    const spanTask = document.createElement('span');
+    const getTaskElement = document.getElementsByClassName('my-tasks')[0];
+    spanTask.innerText = task;
+    getTaskElement.appendChild(spanTask);
+};
+
+addTask('cozinhar ');
+addTask('projeto ');
