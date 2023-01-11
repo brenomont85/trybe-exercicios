@@ -75,3 +75,15 @@ const holidayDislpay = () => {
 };
 
 holidayDislpay();
+
+//parte 4
+
+const fridayBtn = () => {
+    const getBtnElement = document.getElementsByClassName('buttons-container')[0];
+    const createFridayBtn = document.createElement('button');
+    createFridayBtn.innerHTML = 'Sexta-feira';
+    createFridayBtn.id = 'btn-friday';
+    getBtnElement.appendChild(createFridayBtn);
+};
+
+fridayBtn();
