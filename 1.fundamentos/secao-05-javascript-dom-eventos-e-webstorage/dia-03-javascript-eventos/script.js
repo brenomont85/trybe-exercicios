@@ -87,3 +87,26 @@ const fridayBtn = () => {
 };
 
 fridayBtn();
+
+//parte 5
+
+const fridayText = (array) => {
+    const getFridayBtn = document.getElementById('btn-friday');
+    const getFridayLi = document.getElementsByClassName('friday');
+    const fridayText = 'Sextou!';
+
+    const fridayChangeText = () => { 
+        for (let index = 0; index < getFridayLi.length; index += 1) {
+            if (getFridayLi[index].innerText !== fridayText) {
+                getFridayLi[index].innerText = fridayText;
+            } else {
+                getFridayLi[index].innerText = array[index];
+            }
+        }
+    }
+    getFridayBtn.addEventListener('click', fridayChangeText)
+};
+
+const decemberFridays = [4, 11, 18, 25];
+
+fridayText(decemberFridays);
