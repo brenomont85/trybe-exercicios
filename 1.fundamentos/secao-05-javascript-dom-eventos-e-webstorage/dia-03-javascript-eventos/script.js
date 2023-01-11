@@ -132,7 +132,6 @@ dayMouseOver();
 dayMouseOut();
 
 //parte 7
- 
 const addTask = (task) => {
     const spanTask = document.createElement('span');
     const getTaskElement = document.getElementsByClassName('my-tasks')[0];
@@ -140,5 +139,17 @@ const addTask = (task) => {
     getTaskElement.appendChild(spanTask);
 };
 
-addTask('cozinhar ');
-addTask('projeto ');
+addTask('projeto');
+
+//parte 8
+const addTaskDiv = (color) => {
+    const getTaskElement = document.querySelector('.my-tasks');
+    const creatTaskDiv = document.createElement('div');
+
+    creatTaskDiv.className = 'task';
+    creatTaskDiv.style.backgroundColor = color;
+    getTaskElement.appendChild(creatTaskDiv);
+};
+
+addTaskDiv('crimson');
+
