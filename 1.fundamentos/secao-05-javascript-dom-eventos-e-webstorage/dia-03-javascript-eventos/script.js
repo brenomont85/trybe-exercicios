@@ -49,7 +49,29 @@ const createBtn = () => {
     const getBtnElement = document.getElementsByClassName('buttons-container')[0];
     const createBtnElement = document.createElement('button');
     createBtnElement.innerHTML = 'Feriados';
+    createBtnElement.id = 'btn-holiday'
     getBtnElement.appendChild( createBtnElement);
 };
 
 createBtn();
+
+//parte 3
+const holidayDislpay = () => {
+    let getHolidayBtn = document.getElementById('btn-holiday');
+    let liHolday = document.getElementsByClassName('holiday');
+    let color = 'rgb(238,238,238)';
+    let newColor = 'pink';
+
+    const changeColorLiH = () => {
+        for (index = 0; index < liHolday.length; index += 1) {
+            if (liHolday[index].style.backgroundColor === newColor) {
+                liHolday[index].style.backgroundColor = color; 
+            } else {
+                liHolday[index].style.backgroundColor = newColor;
+            }
+        }
+    }
+   getHolidayBtn.addEventListener('click', changeColorLiH)
+};
+
+holidayDislpay();
