@@ -77,7 +77,6 @@ const holidayDislpay = () => {
 holidayDislpay();
 
 //parte 4
-
 const fridayBtn = () => {
     const getBtnElement = document.getElementsByClassName('buttons-container')[0];
     const createFridayBtn = document.createElement('button');
@@ -89,7 +88,6 @@ const fridayBtn = () => {
 fridayBtn();
 
 //parte 5
-
 const fridayText = (array) => {
     const getFridayBtn = document.getElementById('btn-friday');
     const getFridayLi = document.getElementsByClassName('friday');
@@ -110,3 +108,25 @@ const fridayText = (array) => {
 const decemberFridays = [4, 11, 18, 25];
 
 fridayText(decemberFridays);
+
+//parte 6
+const dayMouseOver = () => {
+    let days = document.querySelector('#days');
+    const zoomIn = (event) => {
+        event.target.style.fontSize =' 30px';
+        event.target.style.fontWeight = '600';
+    }
+    days.addEventListener('mouseover', zoomIn);
+};
+
+const dayMouseOut = () => {
+    let days = document.getElementById('days');
+    const zoomOut = (event) => {
+        event.target.style.fontSize =' 20px';
+        event.target.style.fontWeight = '200';
+    }
+    days.addEventListener('mouseout', zoomOut);
+};
+
+dayMouseOver();
+dayMouseOut();
