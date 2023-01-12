@@ -170,3 +170,25 @@ const selectTask = () => {
 
 selectTask();
 
+//parte 10
+const setDayColor = () => {
+    let taskselected = document.getElementsByClassName('task selected');
+    const getDiv = document.getElementsByClassName('task')[0];
+    const divColor = getDiv.style.backgroundColor;
+    const days = document.getElementById('days');
+
+    const changeDayColor = (event) => {
+        let dayColor = event.target.style.color
+        if (taskselected.length > 0 && dayColor !== divColor) {
+            event.target.style.color = divColor;
+        } else {
+            event.target.style.color = 'rgb(119,119,119)';
+        }
+    
+    }
+
+    days.addEventListener('click', changeDayColor);
+};
+
+setDayColor();
+
