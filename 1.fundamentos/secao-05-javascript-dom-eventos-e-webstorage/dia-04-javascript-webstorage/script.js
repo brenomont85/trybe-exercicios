@@ -24,4 +24,10 @@ window.onload = () => {
     }
     fontSizeSelect.addEventListener('change', changeFontSize);
 
+    const changeLineHeight = () => {
+        let selected = lineHeightSelect.selectedOptions[0];
+        mainContent.style.lineHeight = selected.value;
+    }
+    lineHeightSelect.addEventListener('change', changeLineHeight);
+
 }
