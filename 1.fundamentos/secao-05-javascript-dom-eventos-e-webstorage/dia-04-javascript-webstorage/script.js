@@ -30,4 +30,10 @@ window.onload = () => {
     }
     lineHeightSelect.addEventListener('change', changeLineHeight);
 
+    const changeFont = () => {
+        let selected = fontSelect.selectedOptions[0];
+        mainContent.style.fontFamily = selected.value;
+    }
+    fontSelect.addEventListener('change', changeFont);
+
 }
