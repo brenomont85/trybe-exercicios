@@ -12,5 +12,10 @@ window.onload = () => {
     }
     bgSelect.addEventListener('change', changeBg);
 
+    const changeFontColor = () => {
+        let selected = textSelect.selectedOptions[0];
+        mainContent.style.color = selected.value;
+    }
+    textSelect.addEventListener('change', changeFontColor);
 
 }
