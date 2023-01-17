@@ -18,4 +18,10 @@ window.onload = () => {
     }
     textSelect.addEventListener('change', changeFontColor);
 
+    const changeFontSize = () => {
+        let selected = fontSizeSelect.selectedOptions[0];
+        mainContent.style.fontSize = selected.value;
+    }
+    fontSizeSelect.addEventListener('change', changeFontSize);
+
 }
