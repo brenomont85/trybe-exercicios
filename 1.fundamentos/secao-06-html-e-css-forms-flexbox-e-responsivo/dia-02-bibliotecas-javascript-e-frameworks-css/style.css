@@ -2,6 +2,6 @@ label {
     font-size: 20px;
 }
 
-fieldset {
-    max-width: 70%;
+input .form-check-label {
+    color: green;
 }
