@@ -46,4 +46,10 @@ window.onload = () => {
     }
     fontSelect.addEventListener('change', changeFont);
 
+    const savedBackground = localStorage.getItem('bg-color');
+    const savedTextColor = localStorage.getItem('text-color');
+    const savedFontSize = localStorage.getItem('font-size');
+    const savedLineHeight = localStorage.getItem('line-height');
+    const savedFont = localStorage.getItem('font'); 
+
 }
