@@ -10,7 +10,7 @@
 <body>
    
     <h1>Formulário TrybeTrip<h1>
-    <form action="">
+    <form action="" method="">
         <fieldset>
             <label for="fullName">Nome Completo:</label>
             <input type="text" id="fullName" name="fullName" placeholder="Digite seu nome completo" maxlength="40" minlength="10" required>      
@@ -37,8 +37,10 @@
             <input id="promo" name="promo" type="checkbox">
             <br>
             <label for="agreement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
-            <input type="checkbox" name="agreement" id="agreement">
+            <input type="checkbox" name="agreement" id="agreement" required>
         </fieldset>
+        <button type="submit" id="submit-btn">Participar do concurso TrybeTrip</button>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
