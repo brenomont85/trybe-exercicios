@@ -2,6 +2,14 @@ label {
     font-size: 20px;
 }
 
-input .form-check-label {
-    color: green;
+input {
+    max-width: 50%;
+}
+
+textarea {
+    max-width: 50%;
+}
+
+form-check-input {
+    max-height: 10px;
 }
