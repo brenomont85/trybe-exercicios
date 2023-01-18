@@ -52,4 +52,9 @@ window.onload = () => {
     const savedLineHeight = localStorage.getItem('line-height');
     const savedFont = localStorage.getItem('font'); 
 
+    document.body.style.backgroundColor = savedBackground;
+    mainContent.style.color = savedTextColor;
+    mainContent.style.fontSize = savedFontSize;
+    mainContent.style.lineHeight = savedLineHeight;
+    mainContent.style.fontFamily = savedFont;
 }
