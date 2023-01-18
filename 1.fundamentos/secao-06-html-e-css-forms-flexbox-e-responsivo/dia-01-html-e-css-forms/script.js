@@ -16,9 +16,17 @@ const clearFields = () => {
   textArea.value = '';
 };
 
+const enableSubmit = () => {
+    const submitBtn = document.getElementById('submit-btn');
+    const agreement = document.getElementById('agreement');
+    submitBtn.disabled = !agreement.checked;
+};
+
 window.onload = () => {
     const clearBtn = document.querySelector('#clear-btn');
     clearBtn.addEventListener('click', clearFields);
     const submitBtn = document.getElementById('submit-btn')
     submitBtn.addEventListener('click', handleSubmit);
+    const agreement = document.getElementById('agreement');
+    agreement.addEventListener('change', enableSubmit);
 };
