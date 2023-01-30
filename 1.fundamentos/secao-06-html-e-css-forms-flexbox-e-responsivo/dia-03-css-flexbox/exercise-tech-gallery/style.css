@@ -37,3 +37,18 @@ h3:hover {
   width: 25px;
   margin-left: 10px;
 }
+
+.text-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+p {
+  color: #232525;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 90%;
+}
