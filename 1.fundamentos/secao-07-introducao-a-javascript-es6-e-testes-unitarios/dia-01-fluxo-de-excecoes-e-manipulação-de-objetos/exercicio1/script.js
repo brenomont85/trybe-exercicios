@@ -1,22 +1,25 @@
-
-const validateNumbers = () => {
-  const value1 = document.getElementById('value1').value;
-  const value2 = document.getElementById('value2').value;
-  if (typeof value1 !== 'number' || typeof value2 !== 'number') {
-    throw new Error ('Não é um numero');
+const validateNumbers = (value1, value2) => {
+  if (!value1 || !value2) {
+    throw new Error('Preencha os campos');
   }
-}; 
+  if (isNaN(value1) || isNaN(value2)) {
+    throw new Error('Informe dois números para realizar a soma');
+  }
+}
 
-function sum() {
-  const value1 = document.getElementById('value1').value;
-  const value2 = document.getElementById('value2').value;
-  const result = Number(value1) + Number(value2);
-  document.getElementById('result').innerHTML = `Resultado: ${result}`;
-  document.getElementById('value1').value = '';
-  document.getElementById('value2').value = '';
+const sum = () => {
+  try {
+    const value1 = document.getElementById('value1').value;
+    const value2 = document.getElementById('value2').value;
+    validateNumbers(value1, value2);
+    const result = Number(value1) + Number(value2);
+    document.getElementById('result').innerHTML = `Resultado: ${result}`;
+  } catch (error) {
+    document.getElementById('result').innerHTML = `Erro: ${error.message}`;
+  } 
 }
 
 window.onload = () => {
-const button = document.getElementById('button');
+  const button = document.getElementById('button');
   button.addEventListener('click', sum);
 }
