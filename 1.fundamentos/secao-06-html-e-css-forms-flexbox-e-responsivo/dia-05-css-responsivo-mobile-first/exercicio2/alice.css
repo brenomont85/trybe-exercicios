@@ -40,3 +40,13 @@ p {
   }
   
 }
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: lightgreen;
+  }
+  
+  .container {
+    flex-wrap: nowrap;
+  }
+}
