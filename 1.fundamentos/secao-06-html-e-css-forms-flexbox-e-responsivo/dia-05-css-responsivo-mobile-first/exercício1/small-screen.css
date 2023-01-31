@@ -29,10 +29,15 @@ h2 {
 img {
   max-width: 100%;
 }
+
 main {
+  display: flex;
+  flex-direction: column;
 }
 
 section {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 figure {
