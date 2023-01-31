@@ -13,3 +13,19 @@ html {
 p {
   padding: 20px;
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightcoral;
+    font-family: sans-serif;
+  }
+  .container {
+    flex-direction: column;
+  }
+  
+  p {
+    padding: 0 5px;
+    line-height: 1.5em;
+  }
+  
+}
