@@ -8,12 +8,17 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 body {
   font: 1.2em/1.2 Helvetica, aria, sans-serif;
 }
+
 article {
 }
+
 h1 {
+  font-size: 1.8em;
+  margin: .9em 0 0 0;
 }
 h2 {
 }
