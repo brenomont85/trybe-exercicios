@@ -1,3 +1,12 @@
+
+const validateNumbers = () => {
+  const value1 = document.getElementById('value1').value;
+  const value2 = document.getElementById('value2').value;
+  if (typeof value1 !== 'number' || typeof value2 !== 'number') {
+    throw new Error ('Não é um numero');
+  }
+}; 
+
 function sum() {
   const value1 = document.getElementById('value1').value;
   const value2 = document.getElementById('value2').value;
