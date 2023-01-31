@@ -5,12 +5,14 @@
 html {
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
   font: 1.2em/1.2 Helvetica, aria, sans-serif;
+  margin: 0 3%;
 }
 
 article {
@@ -29,11 +31,14 @@ img {
 }
 main {
 }
+
 section {
 }
+
 figure {
   margin: 0;
 }
+
 figcaption {
   font-size: .8em;
 }
