@@ -88,3 +88,26 @@ const getNumberOfStudentsMath = (object) => {
 };
 
 console.log(getNumberOfStudentsMath(allLessons));
+
+const info = (object, name) => {
+    const lessons = [];
+    let students = 0;
+    const values = Object.values(object);
+    for (let index in values) {
+        if (values[index].professor === name) {
+            lessons.push(values[index].materia);
+            students += values[index].numeroEstudantes;
+        }
+    }
+    return { aulas: lessons, estudantes: students};
+};
+
+const createReport = (object, name) => {
+    const report = {};
+    report.professor = name;
+    Object.assign(report, info(object, name));
+    return report;
+};
+
+console.log(createReport(allLessons, 'Maria Clara'));
+
