@@ -75,3 +75,16 @@ console.log(verifyEntries(lesson1, 'turno', 'manhã'));
 console.log(verifyEntries(lesson1, 'turno', 'noite'));
 console.log(verifyEntries(lesson3, 'turno', 'noite'));
 console.log(verifyEntries(lesson3, 'materia', 'Maria Clara'));
+
+const getNumberOfStudentsMath = (object) => {
+    let total = 0;
+    const keys = Object.keys(object);
+    for (index in keys) {
+      if(object[keys[index]].materia === 'Matemática'){
+      total += object[keys[index]].numeroEstudantes;
+      }
+    }
+    return total;
+};
+
+console.log(getNumberOfStudentsMath(allLessons));
