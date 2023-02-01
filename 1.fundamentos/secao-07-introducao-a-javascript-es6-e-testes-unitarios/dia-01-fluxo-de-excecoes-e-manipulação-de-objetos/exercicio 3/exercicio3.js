@@ -18,18 +18,20 @@ const lesson3 = {
     turno: 'noite',
 };
 
-const addShift = (object, key, value) => {
-    object[key] = value;
-};
+const addShift = (object, key, value) => object[key] = value;
 
 addShift(lesson2, 'turno', 'noite');
 
 console.log(lesson2);
 
-const listKeys = (object) => {
-    console.log(Object.keys(object));
-};
+const listKeys = (object) => console.log(Object.keys(object));
 
 listKeys(lesson1);
 listKeys(lesson2);
 listKeys(lesson3);
+
+const objectSize = (object) => console.log(Object.keys(object).length);  
+
+objectSize(lesson1);
+objectSize(lesson2);
+objectSize(lesson3);
