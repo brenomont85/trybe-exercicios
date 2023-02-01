@@ -52,3 +52,10 @@ const sumAllStudents  = (object) => {
 };
 
 console.log(sumAllStudents(allLessons));
+
+const getValueByPosition = (object, position) => Object.values(object)[position];
+
+console.log(getValueByPosition(lesson1, 0));
+console.log(getValueByPosition(lesson2, 0));
+console.log(getValueByPosition(lesson3, 2));
+console.log(getValueByPosition(lesson1, 3));
