@@ -110,4 +110,4 @@ const createReport = (object, name) => {
 };
 
 console.log(createReport(allLessons, 'Maria Clara'));
-
+console.log(createReport(allLessons, 'Carlos'));
