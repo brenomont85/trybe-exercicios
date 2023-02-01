@@ -59,3 +59,19 @@ console.log(getValueByPosition(lesson1, 0));
 console.log(getValueByPosition(lesson2, 0));
 console.log(getValueByPosition(lesson3, 2));
 console.log(getValueByPosition(lesson1, 3));
+
+const verifyEntries = (object, key, value) => {
+    const entries = Object.entries(object);
+    let sameEntry = false;
+    for (let index in entries) {
+        if (entries[index][0] === key && entries[index][1] === value) {
+            sameEntry = true;
+        } 
+    }
+    return sameEntry;
+};
+
+console.log(verifyEntries(lesson1, 'turno', 'manhã'));
+console.log(verifyEntries(lesson1, 'turno', 'noite'));
+console.log(verifyEntries(lesson3, 'turno', 'noite'));
+console.log(verifyEntries(lesson3, 'materia', 'Maria Clara'));
