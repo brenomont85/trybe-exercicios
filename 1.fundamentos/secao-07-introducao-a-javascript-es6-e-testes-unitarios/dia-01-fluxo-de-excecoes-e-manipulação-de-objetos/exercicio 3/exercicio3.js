@@ -35,3 +35,7 @@ const objectSize = (object) => console.log(Object.keys(object).length);
 objectSize(lesson1);
 objectSize(lesson2);
 objectSize(lesson3);
+
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+
+console.log(allLessons);
