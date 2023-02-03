@@ -9,4 +9,12 @@ describe('Verifica funcionamento da função sum', () => {
         expect(sum(0, 0)).toBe(0);
     })
 
+    it('Verifica se função lança um error caso um dos parametros seja uma string', () => {
+        expect(() => {sum(4, '5')}).toThrow(Error);
+    })
+
+    it('Verifica se função lança um error caso um dos parametros seja uma string', () => {
+        expect(() => {sum(4, '5')}).toThrowError('parameters must be numbers');
+    })
+
 });
