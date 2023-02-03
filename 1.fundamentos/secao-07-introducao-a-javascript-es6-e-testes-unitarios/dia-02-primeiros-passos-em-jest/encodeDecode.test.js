@@ -31,6 +31,4 @@ describe('Teste das funções encode e decode', () => {
         expect(decode('p1r1l2l2p3p2d4')).toBe('paralelepipedo');
         expect(decode('p1r1l2l2p3p2d4').length).toBe(14);
     })
-
-
 });
