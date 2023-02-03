@@ -69,4 +69,17 @@ const techList = (array, name) => {
   return techObject;
 };
 
-module.exports = { myRemove, myFizzBuzz, encode, decode, techList};
+const bevArray = (string, reg = /\d+/g) => string.match(reg);
+
+const hydrate = (string) => {
+  let sum = 0;
+  for (let index = 0; index < bevArray(string).length; index += 1) {
+       sum += Number(bevArray(string)[index]);
+  } if (sum === 1) {
+      return `${sum} copo de água`;
+  } else {
+      return `${sum} copos de água`;
+  }
+};
+
+module.exports = {myRemove, myFizzBuzz, encode, decode, techList, hydrate};
