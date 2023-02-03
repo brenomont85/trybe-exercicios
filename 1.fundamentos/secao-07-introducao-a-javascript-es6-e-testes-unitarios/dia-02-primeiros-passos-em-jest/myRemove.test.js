@@ -1,4 +1,4 @@
-const myRemove = require('./functions');
+const { myRemove } = require('./functions');
 
 describe('Testes da função myRemove', () => {
     it('Verifica se função foi declarada', () => {
