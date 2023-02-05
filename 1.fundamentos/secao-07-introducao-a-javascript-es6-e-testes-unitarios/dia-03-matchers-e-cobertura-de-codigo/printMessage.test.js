@@ -9,4 +9,14 @@ describe('Verfifca se funcionamento de função printMessage', () => {
         expect(printMessage(info)).toMatch('Boas vindas,');
         expect(printMessage(info)).toMatch(info.personagem);
     })
+
+    it('Verfica se caso não seja informado um objeto, ou se objeto não conter a chave "personagem", a função lança um erro', () => {
+        const newInfo = {
+            nome: 'Margarida',
+            origem: 'Pato Donald',
+            nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+        }
+        expect(() => {printMessage()}).toThrowError('objeto inválido');
+        expect(() => {printMessage(newInfo)}).toThrowError('objeto inválido');
+    })
 });
