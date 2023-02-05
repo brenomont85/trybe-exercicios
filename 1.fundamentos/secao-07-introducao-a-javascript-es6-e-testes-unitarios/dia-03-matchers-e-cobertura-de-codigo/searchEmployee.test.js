@@ -5,4 +5,10 @@ describe('Verifica funcionamento de função searchEmployee', () => {
         expect(searchEmployee).toBeDefined();
         expect(typeof searchEmployee).toBe('function');
     })
+
+    it('Verifica se a função retorna o primeiro nome caso seja informado o numero do id e a chave FirstName como parametros/argumentos', () => {
+        const actual = searchEmployee('1256-4', 'firstName');
+        const expected = 'Linda';
+
+        expect(actual).tobe(expected);
 });
