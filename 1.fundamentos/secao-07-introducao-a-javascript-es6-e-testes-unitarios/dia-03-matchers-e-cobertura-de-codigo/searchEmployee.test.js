@@ -10,5 +10,6 @@ describe('Verifica funcionamento de função searchEmployee', () => {
         const actual = searchEmployee('1256-4', 'firstName');
         const expected = 'Linda';
 
-        expect(actual).tobe(expected);
+        expect(actual).toBe(expected);
+    })
 });

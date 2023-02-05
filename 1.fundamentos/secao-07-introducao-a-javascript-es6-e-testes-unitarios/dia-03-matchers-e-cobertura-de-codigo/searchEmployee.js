@@ -40,7 +40,13 @@ const professionalBoard = [
   
 // Pesquisa
 const searchEmployee = (id, detail) => {
-  // Implemente seu código aqui
+  let detailInfo = '';
+  for (let index in professionalBoard) {
+    if (professionalBoard[index].id === id) {
+      detailInfo = professionalBoard[index][detail];
+    }
+  }
+ return detailInfo;
 };
 
 module.exports = {professionalBoard, searchEmployee};
