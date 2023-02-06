@@ -23,4 +23,9 @@ describe('Verifica funcionamento de função searchEmployee', () => {
     it('Verifica se a função retorna um array de especialidades caso seja informado como parametro o numero da id e a chave specialities', () => {
         expect(searchEmployee('8579-6', 'specialities')).toEqual(['UX', 'Design']);
     })
+
+    it('Verifica se a função lança erro "ID não identificada", caso a o numero d id não conste no quadro de funcionários', () => {
+        expect(() => {searchEmployee('1234-5', 'firstName')}).toThrowError('ID não identificada');
+    })
+
 });
