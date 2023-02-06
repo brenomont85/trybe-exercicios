@@ -38,15 +38,28 @@ const professionalBoard = [
   },
 ];
   
+
 // Pesquisa
+// exercise-bonus.js
+
 const searchEmployee = (id, detail) => {
   let detailInfo = '';
+
   for (let index in professionalBoard) {
-    if (professionalBoard[index].id === id) {
-      detailInfo = professionalBoard[index][detail];
+    const employeeInfo = professionalBoard[index];
+
+    if (employeeInfo.id === id) {
+      detailInfo = employeeInfo;
     }
   }
- return detailInfo;
+
+  if (!detailInfo) {
+    throw new Error("ID não identificada");
+  }
+
+  return detailInfo[detail];
 };
+
+module.exports = searchEmployee;
 
 module.exports = {professionalBoard, searchEmployee};

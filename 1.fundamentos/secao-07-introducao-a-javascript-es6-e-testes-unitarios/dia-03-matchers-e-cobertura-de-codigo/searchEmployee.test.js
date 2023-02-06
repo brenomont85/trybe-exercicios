@@ -25,7 +25,7 @@ describe('Verifica funcionamento de função searchEmployee', () => {
     })
 
     it('Verifica se a função lança erro "ID não identificada", caso a o numero d id não conste no quadro de funcionários', () => {
-        expect(() => {searchEmployee('1234-5', 'firstName')}).toThrowError('ID não identificada');
+        expect(() => {searchEmployee('1253', 'firstName')}).toThrowError('ID não identificada');
     })
 
 });
