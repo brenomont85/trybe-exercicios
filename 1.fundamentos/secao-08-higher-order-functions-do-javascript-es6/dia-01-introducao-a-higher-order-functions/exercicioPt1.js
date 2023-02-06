@@ -18,7 +18,7 @@ console.log(newEmployees(emailGenerator));
 
 //conclui exercicio1 da parte 1
 
-//exercício 
+//exercício
 
 const lotteryResult = (myNumber, callback) => {
   const number = Math.floor((Math.random() * 5) + 1);
@@ -26,5 +26,8 @@ const lotteryResult = (myNumber, callback) => {
   return callback(myNumber, number) ? 'Lucky day, you won!' : 'Try Again!';
 };
 
+const numberChecker = (myNumber, number) => myNumber === number;
+
+console.log(lotteryResult(2, numberChecker));
 
 //conclui exercício 2
