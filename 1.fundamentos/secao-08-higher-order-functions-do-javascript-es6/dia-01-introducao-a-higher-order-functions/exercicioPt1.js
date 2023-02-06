@@ -41,6 +41,21 @@ const gradeResult = (expected, actual, callback) => {
   return `A Nota é: ${result}`;
 };
 
+const verifyAnswer = (arr1, arr2) => {
+  let grade = 0;
+  for (let index in arr1) {
+    if(arr2[index] === 'N.A') {
+      grade = grade;
+    } else if (arr1[index] === arr2[index]) {
+      grade += 1;
+    } else {
+      grade -= 0.5;
+    }
+  }
+
+  return grade;
+};
+
 console.log(gradeResult(RIGHT_ANSWERS, STUDENT_ANSWERS, verifyAnswer));
 
 //conclui exercício 3
