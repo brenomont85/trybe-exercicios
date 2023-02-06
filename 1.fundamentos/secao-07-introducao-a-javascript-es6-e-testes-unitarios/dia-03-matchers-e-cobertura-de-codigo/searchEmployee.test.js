@@ -28,4 +28,8 @@ describe('Verifica funcionamento de função searchEmployee', () => {
         expect(() => {searchEmployee('1253', 'firstName')}).toThrowError('ID não identificada');
     })
 
+    it('Verifica se a função lança erro "Informação indisponível", caso chave informada não exista no objeto', () => {
+        expect(() => {searchEmployee('8579-6', 'organization')}).toThrowError('Informação indisponível');
+    })
+
 });
