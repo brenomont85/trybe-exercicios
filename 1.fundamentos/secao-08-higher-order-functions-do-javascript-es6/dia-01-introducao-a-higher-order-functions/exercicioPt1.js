@@ -31,3 +31,16 @@ const numberChecker = (myNumber, number) => myNumber === number;
 console.log(lotteryResult(2, numberChecker));
 
 //conclui exercício 2
+
+//exercício 3
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const gradeResult = (expected, actual, callback) => {
+  const result = callback(expected, actual);
+  return `A Nota é: ${result}`;
+};
+
+console.log(gradeResult(RIGHT_ANSWERS, STUDENT_ANSWERS, verifyAnswer));
+
+//conclui exercício 3
