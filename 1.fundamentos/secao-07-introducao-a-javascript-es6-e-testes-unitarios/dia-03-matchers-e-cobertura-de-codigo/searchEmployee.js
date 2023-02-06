@@ -57,6 +57,10 @@ const searchEmployee = (id, detail) => {
     throw new Error("ID não identificada");
   }
 
+  if (!detailInfo[detail]) {
+    throw new Error('Informação indisponível');
+
+
   return detailInfo[detail];
 };
 
