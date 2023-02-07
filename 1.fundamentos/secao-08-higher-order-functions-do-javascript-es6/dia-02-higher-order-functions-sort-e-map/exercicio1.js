@@ -18,6 +18,6 @@ const formatedBookNames = () => {
     return formatedBooks;
 };
 
-//console.log(formatedBookNames());
+console.log(formatedBookNames());
 
 assert.deepStrictEqual(formatedBookNames(), expectedResult);
