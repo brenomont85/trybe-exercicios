@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 const books = require('./database');
 
 const expectedResult = [
@@ -17,3 +19,5 @@ const formatedAuthorNamesBirth = () => {
 };
 
 console.log(formatedAuthorNamesBirth());
+
+assert.deepStrictEqual(formatedAuthorNamesBirth(), expectedResult);
