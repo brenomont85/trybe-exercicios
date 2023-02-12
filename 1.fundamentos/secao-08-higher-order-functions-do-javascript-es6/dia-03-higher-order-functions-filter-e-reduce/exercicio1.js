@@ -36,7 +36,7 @@ const expectedResult = [
 const fantasyOrScienceFiction = () => {
     const expectedGenres = ['Fantasia', 'Ficção Científica'];
     return books.filter((book) => expectedGenres.includes(book.genre));
-}
+};
 
 console.log(fantasyOrScienceFiction());
 

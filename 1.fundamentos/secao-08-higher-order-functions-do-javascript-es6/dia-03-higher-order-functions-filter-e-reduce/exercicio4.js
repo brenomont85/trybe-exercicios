@@ -9,5 +9,12 @@ const expectedResult = [
 ];
 
 const fantasyOrScienceFictionAuthors = () => {
-    // escreva seu código aqui
-}
+    const expectedGenres = ['Fantasia', 'Ficção Científica'];
+    return books
+        .filter((book) => expectedGenres.includes(book.genre))
+        .map((book) => book.author.name).sort();
+};
+
+console.log(fantasyOrScienceFictionAuthors());
+
+assert.deepEqual(fantasyOrScienceFictionAuthors(), expectedResult);
