@@ -8,18 +8,18 @@ const expectedResult = {
     capital: 'Pago Pago',
     population: 55197,
     area: 199
-  }
-  
-  const longestName = () => {
+}
+
+const longestName = () => {
     const names = countries.map((country) => country.name)
     const nameLength = names
-        .reduce((name, currentName) => 
-        (name.length > currentName.length) ? name : currentName);
+        .reduce((name, currentName) =>
+            (name.length > currentName.length) ? name : currentName);
     const nameObj = countries.find((country) => country.name.includes(nameLength));
-    
+
     return nameObj;
-  };
+};
 
-  console.log(longestName());
+console.log(longestName());
 
-  assert.deepEqual(longestName(), expectedResult);
+assert.deepEqual(longestName(), expectedResult);
