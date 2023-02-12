@@ -12,3 +12,5 @@ const getTotalArea = () => {
 };
 
 console.log(getTotalArea());
+
+assert.equal(getTotalArea(), expectedResult);
