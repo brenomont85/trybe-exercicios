@@ -4,5 +4,11 @@ const assert = require('assert');
 const expectedResult = 4311757;
 
 const getTotalArea = () => {
-// retorne seu código aqui
-}
+    return countries
+        .map((country) => country.area)
+        .reduce((acc, area) => {
+            return acc + area
+        }, 0);
+};
+
+console.log(getTotalArea());
