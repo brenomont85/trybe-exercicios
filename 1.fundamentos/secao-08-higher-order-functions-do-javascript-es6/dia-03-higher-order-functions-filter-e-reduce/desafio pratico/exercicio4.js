@@ -7,3 +7,7 @@ const names = [
 
 const expectedResult = 20;
 
+const letterArray = names.join('').toLowerCase().split('');
+
+console.log(letterArray);
+
