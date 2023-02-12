@@ -9,7 +9,7 @@ const getPopulation = () => {
         .reduce((acc, population) => {
             return acc + population; 
         }, 0);
-}
+};
 
 console.log(getPopulation());
 
