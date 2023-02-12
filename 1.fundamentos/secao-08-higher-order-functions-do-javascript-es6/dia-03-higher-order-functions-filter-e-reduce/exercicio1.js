@@ -1,3 +1,4 @@
+const assert = require('assert');
 const books = require('./data');
 
 const expectedResult = [
@@ -38,3 +39,5 @@ const fantasyOrScienceFiction = () => {
 }
 
 console.log(fantasyOrScienceFiction());
+
+assert.deepEqual(fantasyOrScienceFiction(), expectedResult);

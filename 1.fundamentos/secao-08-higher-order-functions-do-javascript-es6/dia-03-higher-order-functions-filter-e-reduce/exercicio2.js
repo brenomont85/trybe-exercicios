@@ -1,3 +1,5 @@
+const { deepEqual } = require('assert');
+const assert = require('assert');
 const books = require('./data');
 
 const expectedResult = [
@@ -32,3 +34,5 @@ const oldBooksOrdered = () => {
 }
 
 console.log(oldBooksOrdered());
+
+assert.deepEqual(oldBooksOrdered(), expectedResult);
