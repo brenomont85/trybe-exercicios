@@ -17,7 +17,9 @@ const ships = [
     // measurementUnit: unidade de medida
 ];
 
-// escreva shipLength abaixo
+const shipLength = ({name, length, measurementUnit }) => {
+    return `${name} is ${length} ${measurementUnit} long`
+};
 
 // retorno esperado
 console.log(shipLength(ships[0])); // 'Titanic is 269.1 meters long'
