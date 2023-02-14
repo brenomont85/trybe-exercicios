@@ -9,7 +9,10 @@ const student2 = {
     age: 20,
 }
 
-// escreva 'getLastName' abaixo para receber os objetos e retornar sua propriedade `lastName`
+const getLastName = (obj) => {
+    const { lastName = 'lastName não preenchido'} =obj;
+    return lastName;
+};
 
 console.log(getLastName(student1));
 console.log(getLastName(student2));
