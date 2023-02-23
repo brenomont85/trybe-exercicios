@@ -1,0 +1,12 @@
+{
+  "name": "gerador-de-senhas",
+  "version": "1.0.0",
+  "description": "Password generator tool, for creating strong and random passwords",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Breno Monteiro",
+  "license": "ISC"
+}
