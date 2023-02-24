@@ -8,11 +8,12 @@ const outputText = document.getElementById('answer');
 validationButton.addEventListener('click', (event) => {
   event.preventDefault();
 
+  const UUID_VERSION = 4;
   const valueValidation = {
     cpf: validator.isTaxID(inputValue.value, 'pt-BR'),
     hexColor: validator.isHexColor(inputValue.value),
     email: validator.isEmail(inputValue.value),
-    uuid: validator.isUUID(inputValue.value, 4),
+    uuid: validator.isUUID(inputValue.value, UUID_VERSION),
     url: validator.isURL(inputValue.value),
   };
 
