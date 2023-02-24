@@ -1,0 +1,23 @@
+{
+  "name": "gerador-de-senhas",
+  "version": "1.0.0",
+  "description": "Password generator tool, for creating strong and random passwords",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open",
+    "lint": "eslint ./src"
+  },
+  "keywords": [],
+  "author": "Breno Monteiro",
+  "license": "ISC",
+  "dependencies": {
+    "clipboard-copy": "^4.0.1",
+    "nanoid": "^4.0.1",
+    "vite": "^4.1.4"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.34.0"
+  }
+}
