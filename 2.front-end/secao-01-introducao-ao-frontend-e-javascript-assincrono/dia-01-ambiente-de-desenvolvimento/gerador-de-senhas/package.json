@@ -4,7 +4,8 @@
   "description": "Password generator tool, for creating strong and random passwords",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open"
   },
   "keywords": [],
   "author": "Breno Monteiro",
