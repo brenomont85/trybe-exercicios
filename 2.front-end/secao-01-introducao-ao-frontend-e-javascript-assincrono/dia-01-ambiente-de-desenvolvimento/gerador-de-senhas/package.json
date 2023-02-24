@@ -10,7 +10,8 @@
   "author": "Breno Monteiro",
   "license": "ISC",
   "dependencies": {
-    "nanoid": "^4.0.1"
+    "nanoid": "^4.0.1",
+    "vite": "^4.1.4"
   },
   "type": "module"
 }
