@@ -14,5 +14,8 @@
     "nanoid": "^4.0.1",
     "vite": "^4.1.4"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.34.0"
+  }
 }
