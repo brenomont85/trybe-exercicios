@@ -1,4 +1,5 @@
 import validator from 'validator';
+import './style.css';
 
 const inputValue = document.getElementById('value');
 const validationButton = document.getElementById('button');
