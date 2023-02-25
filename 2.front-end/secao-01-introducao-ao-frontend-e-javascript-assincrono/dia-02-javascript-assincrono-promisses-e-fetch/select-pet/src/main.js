@@ -17,3 +17,16 @@ dogBtn.addEventListener('click', (event) => {
       image.src = data.message;
     });
 });
+
+catBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  const cats = fetch(CAT_API_URL);
+
+  cats
+    .then((result) => result.json())
+    .then((data) => {
+      image.src = data.file
+    });
+
+});
