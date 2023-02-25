@@ -41,7 +41,7 @@ surpBtn.addEventListener('click', (event) => {
   ])
     .then((result) => result.json())
     .then((data) => {
-      const petURL = data.file || data.message;
+      const petURL = data.message || data.file;
 
       image.src = petURL;
     });
