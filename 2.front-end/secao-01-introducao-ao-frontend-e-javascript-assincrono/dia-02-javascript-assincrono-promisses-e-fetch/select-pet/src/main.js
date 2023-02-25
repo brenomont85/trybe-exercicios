@@ -26,7 +26,22 @@ catBtn.addEventListener('click', (event) => {
   cats
     .then((result) => result.json())
     .then((data) => {
-      image.src = data.file
+      image.src = data.file;
     });
+});
+
+surpBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  
+  Promise.any([
+    fetch(DOG_API_URL),
+    fetch(CAT_API_URL),
+  ])
+    .then((result) => result.json())
+    .then((data) => {
+      const petURL = data.file || data.message;
+
+      image.src = petURL;
+    })
 
 });
