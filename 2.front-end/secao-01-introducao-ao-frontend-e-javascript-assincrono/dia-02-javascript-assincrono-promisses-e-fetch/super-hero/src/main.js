@@ -1,4 +1,5 @@
 import Swal from 'sweetalert2';
+import "./style.css";
 
 const image = document.getElementById('hero-image');
 const name = document.getElementById('hero-name');
