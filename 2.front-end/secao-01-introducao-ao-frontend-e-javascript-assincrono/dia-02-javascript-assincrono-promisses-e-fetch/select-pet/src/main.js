@@ -1,3 +1,5 @@
+import './style.css';
+
 const dogBtn = document.querySelector('#dog-btn');
 const catBtn = document.querySelector('#cat-btn');
 const surpBtn = document.querySelector('#surprise-btn');
@@ -32,7 +34,7 @@ catBtn.addEventListener('click', (event) => {
 
 surpBtn.addEventListener('click', (event) => {
   event.preventDefault();
-  
+
   Promise.any([
     fetch(DOG_API_URL),
     fetch(CAT_API_URL),
@@ -42,6 +44,5 @@ surpBtn.addEventListener('click', (event) => {
       const petURL = data.file || data.message;
 
       image.src = petURL;
-    })
-
+    });
 });
